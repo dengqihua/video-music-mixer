@@ -385,32 +385,32 @@ if __name__ == "__main__":
 """
 1. 常用转换命令
     默认转换为高质量 MP3
-    python3 video_to_audio.py video.mp4
+    python video_to_audio.py ./data/output/test.mp4
     
     
     直接复制原始音轨，不重新编码
-    python3 video_to_audio.py 宇宙终章：时间的尽头与万物的归宿.mp4 -m copy
+    python video_to_audio.py ./data/output/test.mp4 -m copy
     
     
     转为 FLAC
-    python3 video_to_audio.py video.mp4 -m flac
+    python video_to_audio.py ./data/output/test.mp4 -m flac
     
     
     转为 320 kbps MP3
-    python3 video_to_audio.py video.mp4 -m cbr320
+    python video_to_audio.py ./data/output/test.mp4 ./data/output/audio -m cbr320
 
 
 2. 批量处理
     转换目录中的 MP4，输出到独立目录
-    python3 video_to_audio.py ./videos ./audio
+    python video_to_audio.py ./data/output/ ./data/output/audio
     
     
     
     递归处理所有子目录，并保留目录结构
-    python3 video_to_audio.py ./videos ./audio -r
+    python video_to_audio.py ./data/output/ ./data/output/audio -r
     
     
     
     允许覆盖已存在的音频文件
-    python3 video_to_audio.py ./videos ./audio --overwrite
+    python video_to_audio.py ./data/output/ ./data/output/audio --overwrite
 """
