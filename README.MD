@@ -41,7 +41,7 @@
 ## 3. 项目目录
 
 ```text
-video-music-mixer-v2/
+video-music-mixer/
 ├── main.py
 ├── requirements.txt
 ├── setup.sh                 # macOS / Linux 虚拟环境安装
